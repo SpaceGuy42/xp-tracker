@@ -2,6 +2,11 @@
 
 
 int main() {
+    char name[50];
+    printf("Enter your character name: ");
+    scanf("%s", name);
+    printf("Welcome, %s! Let's track your XP.\n", name);
+    
     int xp = 0;                                             //Total XP the user has earned
     int tasks = 0;                                          //Number of tasks entered by the user
 
@@ -20,3 +25,4 @@ int main() {
     printf("Mission complete. Total XP earned: %d\n", xp);
     return 0;                                               //Exit program
 }
+
